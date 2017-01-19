@@ -1,4 +1,5 @@
-import sqlalchemy
+#from datetime import datetime
+#from flask_sqlalchemy import SQLAlchemy
 from flask import Flask
 from flask import session, request, flash, url_for, redirect, render_template, abort, g
 from flask.ext.login import LoginManager
@@ -6,6 +7,7 @@ from flask.ext.login import login_user , logout_user , current_user , login_requ
 
 
 app = Flask(__name__)
+#db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
@@ -76,3 +78,30 @@ def login():
     login_user(registered_user)
     flash('Logged in successfully')
     return redirect(request.args.get('next') or url_for('index'))
+
+
+@app.route('/')
+@login_required
+def index():
+    pass
+
+
+@app.route('/materials')
+@login_required
+def materials_pg():
+    pass
+
+
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('index'))
+
+
+@app.before_request
+def before_request():
+    g.user = current_user
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
