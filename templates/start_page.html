@@ -6,18 +6,30 @@
 </head>
 
 <body>
+{% extends "layout.html" %}
+{% block body %}
+  <form action="" method=post class="form-horizontal">
+    <h2>Signin to FlaskLogin(Todo) Application </h2>
+    <div class="control-group">
+        <div class="controls">
+          <input type="text" id="username" name="username" class="input-xlarge"
+            placeholder="Enter Username" required>
+        </div>
+    </div>
 
-<form action="" method=post>
-  <dl>
-    <dt>Identifiant:
-    <dd><input type=text name=username>
-    <dt>Mot de passe:
-    <dd><input type=password name=password>
-  </dl>
-  <p>
-    <input type=submit value=Entrer>
-    <input type=hidden value="{{ next or '' }}" name=next>
-</form>
-<a href="sign_up_page.html">Créer mon compte</a>
+    <div class="control-group">
+        <div class="controls">
+          <input type="password" id="password" name="password" class="input-xlarge"
+            placeholder="Enter Password" required>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+          <button type="submit" class="btn btn-success">Signin</button>
+        </div>
+    </div>
+  </form>
+{% endblock %}
 </body>
 </html>

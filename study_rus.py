@@ -1,4 +1,4 @@
-
+import sqlalchemy
 from flask import Flask
 from flask import url_for, render_template, request, redirect
 from flask.ext.login import LoginManager
@@ -11,8 +11,8 @@ login_manager.login_view = 'login'
 
 
 @login_manager.user_loader
-def load_user(us_id):
-    return User.query.get(int(us_id))
+def load_user(id):
+    return User.query.get(int(id))
 
 
 class User(db.Model):
@@ -45,27 +45,19 @@ class User(db.Model):
         return '<User %r>' % (self.username)
 
 
-
-@app.route('/')
-def index():
-    if request.args:
-        return redirect(pass)
-    render_template('start_page.html')
-
-
-@app.route('/signup')
-def sign_up():
-    if request.args:
-        return redirect(pass)
-    render_template('sign_up_page.html')
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'GET':
+        return render_template('sign_up_page.html')
+    user = User(request.form['username'], request.form['password'], request.form['email'])
+    db.session.add(user)
+    db.session.commit()
+    flash('User successfully registered')
+    return redirect(url_for('login'))
 
 
-@login_manager.user_loader
-def load_user(user_id):
-    return User.get(user_id)
-
-
-@app.route('/materials')
-@login_required
-def materials():
-    render_template('materials_page.html')
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'GET':
+        return render_template('start_page.html')
+    return redirect(url_for('index'))
