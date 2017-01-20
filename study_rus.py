@@ -1,13 +1,13 @@
-#from datetime import datetime
-#from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 from flask import session, request, flash, url_for, redirect, render_template, abort, g
 from flask.ext.login import LoginManager
 from flask.ext.login import login_user , logout_user , current_user , login_required
 
 
 app = Flask(__name__)
-#db = SQLAlchemy(app)
+db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
@@ -42,7 +42,7 @@ class User(db.Model):
         return False
 
     def get_id(self):
-        return unicode(self.id)
+        return str(self.id)
 
     def __repr__(self):
         return '<User %r>' % (self.username)
