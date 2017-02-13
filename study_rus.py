@@ -4,16 +4,24 @@ from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask import session, request, flash, url_for, redirect, render_template, abort, g
 from werkzeug.security import generate_password_hash, check_password_hash
-#from flask.ext.login import LoginManager
+from flask.ext.login import UserMixin
+from flask.ext.login import LoginManager
 #from flask.ext.login import login_user , logout_user , current_user , login_required
 
 
 basedir = os.path.abspath(os.path.dirname(__file__))
+login_manager = LoginManager()
+login_manager.session_protection = 'strong'
+login_manager.login_view = 'auth.login'
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir, 'data.sqlite')
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 db = SQLAlchemy(app)
+
+
+def create_app(config_name):
+    pass
 #login_manager = LoginManager()
 #login_manager.init_app(app)
 #login_manager.login_view = 'login'
@@ -24,13 +32,13 @@ db = SQLAlchemy(app)
  #   return User.query.get(int(id))
 
 
-class User(db.Model):
-    __tablename__ = "users"
+class User(UserMixin ,db.Model):
+    __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)#'user_id', db.Integer, primary_key=True)
     username = db.Column(db.String(64), unique=True, index=True)#'username', db.String(20), unique=True), index=True)
     password_hash = db.Column(db.String(128))
     #password = db.Column('password', db.String(10))
-    #email = db.Column('email', db.String(50), unique=True, index=True)
+    email = db.Column(db.String(64), unique=True, index=True)#'email', db.String(50), unique=True, index=True)
     #registered_on = db.Column('registered_on', db.DateTime)
     @property
     def password(self):
