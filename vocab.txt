@@ -1,0 +1,228 @@
+indéclinables
+кóфе    le café (boisson)
+пальтó  le manteau
+менў    le menu
+кафé    le café (établissement)
+метрó   le métro
+кинó    le cinéma
+
+
+sg_tantum
+водá    l’eau
+вóздух  l’air
+дéрево	le bois
+желéзо	le fer
+зóлото	l’or
+серебрó	l’argent
+
+крупá   la semoule
+мáсло	le beurre
+мёд le miel
+молокó	le lait
+мукá	la farine
+сметáна la crème fraîche
+
+бельё	le linge
+зéлень	la verdure
+детворá	les enfants
+листвá	le feuillage
+молодёжь	la jeunesse
+студéнчество    les étudiants
+
+белизнá	la blancheur
+гóре	le malheur
+дрýжба	l’amitié
+любóвь	l’amour
+мóлодость   la jeunesse
+свет	la lumière
+слепотá	la cécité
+тишинá	le silence
+
+горóх	le petit pois
+гречúха	le sarrasin
+картóфель	les pommes de terre
+клубнúка	la fraise
+кукурýза	le maïs
+лук	l’oignon
+малúна	la framboise
+овёс	l’avoine
+пшенúца	le blé
+солóма	la paille
+
+барáнина	du mouton
+говјдина	du bœuf
+дичь	le gibier
+конúна	du cheval
+птúца	la volaille
+рџба	le poisson
+свинúна	du porc
+телјтина	du veau
+
+винó	вúна	les vins
+красотá	красóты	les splendeurs
+крупá	крýпы	les sortes de semoule
+мáсло	мáсла	les variétés d’huile
+рáдость	рáдости	les joies
+скóрость	скóрости	les vitesses
+
+
+pl_tantum
+#2examplesmore
+брўки   le pantalon
+весџ    la balance
+нóжницы les ciseaux
+носúлки la civière
+очкú    les lunettes
+сáни    le traîneau
+
+дéньги  l’argent
+духú    le parfum
+помóи   l’eau de vaisselle
+часџ    la montre
+чернúла l’encre
+шáхматы les échecs
+
+бýдни   les jours ouvrables
+вџборы  les élections
+канúкулы    les vacances
+крестúны    le baptême
+рóды    l’accouchement
+сýтки   24 heures
+
+дрóжжи  la levure
+макарóны    les macaronis
+слúвки  la crème
+щи  la soupe aux choux
+
+Альпы	les Alpes
+Афúны	Athènes
+Гавáйи (на Гавайях)	les îles Hawaï
+Карпáты	les Carpates
+
+pour le Génitif
+
+брўки   le pantalon
+пóхороны    les funérailles
+дéньги  l’argent
+сýтки   24 heures
+канúкулы    les vacances
+хлóпоты les tracas
+нóжницы	les ciseaux
+шáхматы les échecs
+
+ворóта  le portail
+перúла  la balustrade
+дровá   les bûches
+чернúла l’encre
+
+духú    le parfum
+часџ    la montre
+весџ    la balance
+обóи	la tapisserie
+очкú 	les lunettes
+помóи   les eaux usées
+рóды 	l’accouchement
+побóи	les coups
+
+бегá 	les courses hippiques
+потрохá les tripes
+лесá	l’échafaudage
+хлóпья	les flocons
+
+кóзни 	l’intrigue
+сéни	l’entrée de l’izba
+сáни	le traîneau
+щи 	la soupe aux choux
+
+
+genre_commun
+беднјга le malheureux
+пьјница l’ivrogne
+коллéга le collègue
+сиротá	l’orphelin
+левшá	le gaucher
+судьј	le juge
+плáкса	le pleurnichard
+убúйца	l’assassin
+правшá	le droitier
+ýмница	un enfant intelligent
+
+
+-а / -я : PREMIERE DECLINAISON
+дјдя    l’oncle
+пáпа	papa
+мужчúна l’homme
+ўноша   l’adolescent
+братúшка	le frérot
+дéдушка le grand-père
+сынúшка le fiston
+зверýшка	la petite bête
+
+пьéса   la pièce
+недéля  la semaine
+швеј    la couturière
+
+кнúга   le livre
+душá	l’âme
+овцá	la brebis
+кóжа	la peau
+птúца	l’oiseau
+
+кóмната la chambre
+подрýга l’amie
+семьј   la famille
+
+Фрáнция la France
+Россúя  la Russie
+
+кýрица  la poule
+кýкла	la poupée
+свáдьба	la noce
+сестрá	la sœur
+судьбá	le destin
+тюрьмá	la prison
+
+свиньј  le porc
+семьј   la famille
+скамьј  le banc
+статьј 	l’article
+судьј	le juge
+
+гóстья  l’invitée
+лгýнья	la menteuse
+врýнья	la menteuse
+колдýнья    la sorcière
+
+копéйка le kopek
+чáйка   la mouette
+линéйка	la règle
+
+бáшня   la tour
+вúшня	la cerise
+пéсня	la chanson
+
+дерéвня le village
+кýхня   la cuisine
+бáрышня la demoiselle
+
+западнј le piège
+клешнј  la pince
+
+бýкля   la boucle
+ханжá   le snob
+ноздрј  la narine
+вожжá   la rêne
+
+
+
+
+
+
+
+
+
+
+
+
+
+
